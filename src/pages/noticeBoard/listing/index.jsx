@@ -81,6 +81,11 @@ export default function NoticeBoardListing() {
           <Button LinkComponent={RouterLink} to="create" variant="contained">
             Post New Notice
           </Button>
+          <Button LinkComponent={RouterLink} to="sample" variant="contained">
+            Sample Api
+          </Button>
+
+
         </Box>
       </PageHeaderWrapper>
       <NoticeHeader />

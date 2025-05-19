@@ -5,25 +5,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MF Host Example</title>
-    <link rel="stylesheet" href="http://localhost:3000/noticeboardmf.css" />
+    <link rel="stylesheet" href="https://po-canarock-react.vercel.app/noticeboardmf.css" />
 
 </head>
 
 <body>
-    <h1>Hello outer</h1>
-
     <div>
-        <h2>This is MF below:</h2>
-        <div id="mf-container"></div> <!-- Mount point for your MF -->
+        <div id="mf-container"></div>
     </div>
 
-    <!-- Load your bundled MF -->
     <script>
         window.process = { env: {} };
     </script>
-    <script src="http://localhost:3000/noticeboard-bundle.js"></script>
+    <script src="https://po-canarock-react.vercel.app/noticeboard-bundle.js"></script>
     <script>
-        // Mount the MF component once the script is loaded
         window.noticeBoardMF?.mount(document.getElementById("mf-container"), {
             baseName: '/public/index.html',
         });
